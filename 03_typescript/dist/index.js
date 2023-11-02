@@ -55,4 +55,7 @@ class Youtube {
         this.burst = burst;
         this.short = short;
     }
+    createStory() {
+        console.log('');
+    }
 }
