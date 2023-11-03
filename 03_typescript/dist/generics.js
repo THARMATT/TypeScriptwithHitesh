@@ -1,5 +1,5 @@
 "use strict";
-//tu vase b kush nhikar skta 
+//tu vase b kush nhikar skta
 //generics
 //:to reuse code and majorly for typesafety practice
 const score = [];
@@ -18,8 +18,7 @@ function identityFour(val) {
     return val;
 }
 identityFour("hey Parul");
-identityFour({ brand: "string",
-    type: 6 });
+identityFour({ brand: "string", type: 6 });
 //to simplify the code and reusabilty of code
 function getSearchProducts(products) {
     //do some dta opeetaions
@@ -27,6 +26,21 @@ function getSearchProducts(products) {
     return products[myIndex];
 }
 const getMoreProducts = (prodcuts) => {
-    const myIndex = 9; //feeling littlebit creative   
+    const myIndex = 9; //feeling littlebit creative
     return prodcuts[myIndex];
 };
+function genriucfunction(val1, val2) {
+    return {
+        val1,
+        val2,
+    };
+}
+genriucfunction(2, { connection: "", username: "", id: 0 });
+class SellCourse {
+    constructor() {
+        this.cart = [];
+    }
+    addToCart(products) {
+        this.cart.push(products);
+    }
+}
