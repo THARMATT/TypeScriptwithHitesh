@@ -1,8 +1,8 @@
-function detectType(val:number|string|boolean|number[]){
+function detectType(val:number|string|number){
     if(typeof val==="string"){
      return   val.toLowerCase()
     }
-// return val+3
+return val + 3
 }
 function provideId(id:string|null){
     if(!id){
@@ -11,4 +11,5 @@ function provideId(id:string|null){
     }
     id.toLowerCase()
 }
+// typeof||type guard
 
