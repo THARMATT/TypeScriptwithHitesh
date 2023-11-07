@@ -12,4 +12,17 @@ function provideId(id:string|null){
     id.toLowerCase()
 }
 // typeof||type guard
-
+interface User{
+    name:string,
+    email:string
+}
+interface Admin{
+    name:string,
+    email:string,
+    isAdmin:boolean
+}
+function isAdminAcc(account:User|Admin){
+if('isAdmin' in account){
+    return account.isAdmin
+}
+}
