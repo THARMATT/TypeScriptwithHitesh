@@ -3,7 +3,7 @@ function detectType(val) {
     if (typeof val === "string") {
         return val.toLowerCase();
     }
-    // return val+3
+    return val + 3;
 }
 function provideId(id) {
     if (!id) {
@@ -11,4 +11,22 @@ function provideId(id) {
         return;
     }
     id.toLowerCase();
+}
+function isAdminAcc(account) {
+    if ('isAdmin' in account) {
+        return account.isAdmin;
+    }
+}
+function isFish(pet) {
+    return pet.swim !== undefined;
+}
+function getFood(pet) {
+    if (isFish(pet)) {
+        pet;
+        return "fish food";
+    }
+    else {
+        pet;
+        return "bird food";
+    }
 }

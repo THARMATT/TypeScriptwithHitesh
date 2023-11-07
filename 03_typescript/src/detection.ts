@@ -26,3 +26,20 @@ if('isAdmin' in account){
     return account.isAdmin
 }
 }
+// learn typescript from docs
+type Fish={swim:()=>void}
+type Bird={fly:()=>void}
+
+function isFish(pet:Fish|Bird){
+ return  ( pet as Fish).swim !== undefined
+}
+
+function getFood( pet: Fish| Bird){
+    if(isFish(pet)){
+        pet 
+        return "fish food"
+    }
+else{
+    pet
+    return "bird food"
+}}
