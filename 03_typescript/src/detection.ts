@@ -43,3 +43,31 @@ else{
     pet
     return "bird food"
 }}
+
+//discriminated union
+
+interface Circle{
+    kind:"circle"
+    radius:number
+}
+
+interface Square{
+    kind:"square"
+    side:number
+}
+interface Rect{
+    kind:"rectangle"
+    l:number
+    b:number
+}
+
+type Shape=Circle|Square
+function getTrueShape(shape:Shape){
+    if(shape.kind==='circle'){
+return Math.PI*shape.radius**2
+    }
+    return shape.side*shape.side
+}
+
+//do it for switch case 
+//almost done but i learned about just typescript is for type casting

@@ -30,3 +30,11 @@ function getFood(pet) {
         return "bird food";
     }
 }
+function getTrueShape(shape) {
+    if (shape.kind === 'circle') {
+        return Math.PI * shape.radius ** 2;
+    }
+    return shape.side * shape.side;
+}
+//do it for switch case 
+//almost done but i learned about just typescript is for type casting
